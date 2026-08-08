@@ -22,10 +22,18 @@ python -m pytest -q
 python -m long_context_cost
 ```
 
+## Silicon Valley Interview Hook
+
+The `memory_feasibility_report()` API combines parameter memory, KV cache, GPU count and
+headroom into an explicit fit/no-fit decision. The `compare_context_windows()` sweep then
+shows how 32k, 128k and 1M-token workloads change memory and cost, which is the argument
+AI platform teams need before buying or scheduling scarce accelerators.
+
 ## Status
 
-MVP: model/workload profiles, KV-cache estimator, token throughput model, cost summary
-and tests. Next steps: add real benchmark importers and quantization-aware profiles.
+MVP: model/workload profiles, KV-cache estimator, token throughput model, memory
+feasibility report, context-window sweep and tests. Next steps: add real benchmark
+importers and quantization-aware profiles.
 
 ## License
 
