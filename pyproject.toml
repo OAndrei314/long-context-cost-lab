@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "long-context-cost-lab"
+version = "0.1.0"
+description = "Long-context LLM serving cost estimator"
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+include = ["long_context_cost*"]
